@@ -13,7 +13,9 @@ namespace Kodutmaning
             testRoadToll(VehicleType.CAR, 1001, new DateTime(2016, 3, 11, 12, 0, 0), 1000);      // vanlig fredag
             testRoadToll(VehicleType.CAR, 999, new DateTime(2016, 3, 11, 12, 0, 0), 500);        // vanlig fredag
             testRoadToll(VehicleType.MOTORCYCLE, 400, new DateTime(2016, 3, 9, 12, 0, 0), 350);  // vanlig onsdag
+            testRoadToll(VehicleType.CAR, 1300, new DateTime(2016, 3, 8, 20, 0, 0), 500);        // vanlig tisdag (kväll)
             testRoadToll(VehicleType.TRUCK, 7500, new DateTime(2016, 3, 7, 12, 0, 0), 2000);     // vanlig måndag
+            testRoadToll(VehicleType.CAR, 1337, new DateTime(2016, 3, 7, 12, 0, 0), 0, true);    // vanlig måndag med miljöbil
 
             Console.ReadKey();
         }
